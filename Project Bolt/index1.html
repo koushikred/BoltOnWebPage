@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login to Access </title>
+	<script type="text/javascript">
+		function myFunction() {
+    var x = document.getElementById("myPsw").value;
+    var y = document.getElementById("username").value;
+    
+    if (y === "sologodx" && x == "godislive") {
+    
+    document.write("sucess");
+    window.location.replace("index.html");
+ 
+} else {
+   document.write("wrong password");
+   
+  
+}
+}
+	</script>
+	<style type="text/css">
+		.login{
+			padding-top:100px;
+			padding-left:250px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="login">
+  <h3>PLEASE LOGIN WITH THE CREDENTIALS PROVIDED BY YOUR ADMIN</h3>
+Username: <input type="text" id="username" value=""> <br> <br>
+Password: <input type="password" id="myPsw" value=""> <br> <br>
+ 
+
+<button onclick="myFunction()">LOGIN</button>
+</div>
+</body>
+</html>
